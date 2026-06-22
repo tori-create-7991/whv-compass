@@ -1,0 +1,28 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "submittedUrls",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "status", "order": "ASCENDING" },
+        { "fieldPath": "submittedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "messages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "sessionId", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "//": "Stage-1 RAG: a vector index on ragChunks.embedding is created via gcloud (KNN). See docs/rag.md.",
+      "collectionGroup": "ragChunks",
+      "fieldPath": "embedding",
+      "indexes": []
+    }
+  ]
+}

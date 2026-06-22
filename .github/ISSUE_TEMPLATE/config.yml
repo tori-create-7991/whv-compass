@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question / discussion
+    url: https://github.com/tori-create-7991/whv-compass/discussions
+    about: Ask questions or discuss ideas before filing an issue.
+  - name: Security vulnerability
+    url: https://github.com/tori-create-7991/whv-compass/security/advisories/new
+    about: Report security issues privately (do not open a public issue).

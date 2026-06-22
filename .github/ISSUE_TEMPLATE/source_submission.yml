@@ -1,0 +1,45 @@
+name: Source submission
+description: Propose a URL/source to index (official info or experience/review).
+title: "[source]: "
+labels: ["source", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Good sources are the backbone of WHV Compass. Official/government
+        pages are treated as fact; reviews/forums/social are treated as experience.
+  - type: input
+    id: url
+    attributes:
+      label: Source URL
+      placeholder: https://immi.homeaffairs.gov.au/...
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Source type
+      options:
+        - official (government / regulator)
+        - media (established outlet)
+        - community (forum / review site)
+        - sns (social post)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this useful?
+      description: What WHV decision/topic does it help with? (visa, farm, housing, money…)
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights & safety
+      options:
+        - label: This is publicly accessible and indexing summaries/quotes does not obviously violate its terms.
+          required: true
+        - label: The URL contains no personal/sensitive data about identifiable individuals.
+          required: true

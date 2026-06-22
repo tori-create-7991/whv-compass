@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Terracotta tokens — see docs/design-system.md */
+  --bg: #fbf6ec; /* warm cream */
+  --surface: #ffffff;
+  --sand: #f3e9d8;
+  --primary: #c56a3c; /* terracotta accent */
+  --primary-strong: #a8542c;
+  --ink: #2a211c; /* ink-brown text (AA on cream/white) */
+  --ink-muted: #6b5e54;
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-noto-sans-jp), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-dm-serif), var(--font-noto-serif-jp), serif;
+    color: var(--ink);
+  }
+  /* Visible focus for keyboard users (WCAG 2.2) */
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}

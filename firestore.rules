@@ -1,0 +1,23 @@
+rules_version = '2';
+
+// WHV Compass is login-less and PUBLIC. All data access goes through the API
+// (Firebase Admin SDK), which BYPASSES these rules. Therefore the safe default
+// for any direct client connection is: deny everything. This prevents a public
+// client from reading the moderation queue / sources or writing arbitrary data.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default: no direct client access.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // If you later expose realtime graph reads directly to the browser, scope
+    // them tightly — e.g. read-only, per anonymous session id, never listing:
+    //
+    // match /graphNodes/{nodeId} {
+    //   allow get: if resource.data.sessionId == request.auth.token.sessionId;
+    //   allow list, write: if false;
+    // }
+  }
+}

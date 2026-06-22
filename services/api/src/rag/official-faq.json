@@ -1,0 +1,23 @@
+[
+  {
+    "sourceId": "src_homeaffairs_specified_work",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/specified-work",
+    "title": "Specified work — Working Holiday visa (subclass 417)",
+    "text": "To be eligible for a second Working Holiday visa you must complete 88 days (3 months) of specified work in a specified industry and regional area while on your first visa."
+  },
+  {
+    "sourceId": "src_ato_tfn",
+    "tier": "official",
+    "url": "https://www.ato.gov.au/individuals/tax-file-number/",
+    "title": "Tax file number — Australian Taxation Office",
+    "text": "A tax file number (TFN) is free and you can apply online after you arrive in Australia. Give your TFN to your employer to avoid being taxed at the higher no-TFN rate."
+  },
+  {
+    "sourceId": "src_fairwork_minimum_wage",
+    "tier": "official",
+    "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+    "title": "Minimum wages — Fair Work Ombudsman",
+    "text": "Most employees in Australia are covered by a minimum wage and award conditions. Working holiday makers have the same workplace rights; unpaid wages can be reported to the Fair Work Ombudsman."
+  }
+]
