@@ -4,6 +4,7 @@ import { cors } from "hono/cors";
 import { ChatRequest, SubmitRequest } from "@whv-compass/shared";
 import { env } from "./lib/env.js";
 import { handleChat } from "./agents/chatAgent.js";
+import { rateLimitMiddleware } from "./middleware/rateLimit.js";
 import { submitUrl } from "./workflows/urlIngestion.js";
 
 const app = new Hono();
@@ -12,13 +13,12 @@ app.use("/*", cors({ origin: env.webOrigin, allowMethods: ["GET", "POST", "OPTIO
 
 app.get("/healthz", (c) => c.json({ ok: true, llm: env.geminiApiKey ? "enabled" : "mock" }));
 
-app.post("/chat", async (c) => {
+app.post("/chat", rateLimitMiddleware, async (c) => {
   const body = await c.req.json().catch(() => ({}));
   const parsed = ChatRequest.safeParse(body);
   if (!parsed.success) {
     return c.json({ error: "invalid_request", issues: parsed.error.issues }, 400);
   }
-  // TODO: verify Turnstile token + per-session rate limit before answering.
   try {
     const res = await handleChat(parsed.data);
     return c.json(res);

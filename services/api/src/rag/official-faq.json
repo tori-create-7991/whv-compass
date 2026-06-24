@@ -1,23 +1,114 @@
 [
   {
+    "sourceId": "src_homeaffairs_whv_417",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417",
+    "title": "Working Holiday visa (subclass 417) — Home Affairs",
+    "text": "The Working Holiday visa (subclass 417) lets you have an extended holiday in Australia and work here to fund it. You must be 18–30 years old (or 18–35 for some passport holders including Japan) when you apply. ワーキングホリデービザ417号。オーストラリアで休暇を楽しみながら働くためのビザ。日本国籍の場合18〜35歳まで申請可能。扶養家族を帯同不可。"
+  },
+  {
     "sourceId": "src_homeaffairs_specified_work",
     "tier": "official",
     "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/specified-work",
     "title": "Specified work — Working Holiday visa (subclass 417)",
-    "text": "To be eligible for a second Working Holiday visa you must complete 88 days (3 months) of specified work in a specified industry and regional area while on your first visa."
+    "text": "To be eligible for a second Working Holiday visa you must complete 88 days (3 months) of specified work in a specified industry and regional area while on your first visa. Specified work includes plant and animal cultivation, fishing and pearling, tree farming and felling, mining, and construction in regional Australia. セカンドビザ取得のための88日指定労働。農業・漁業・採掘・建設などの指定業種をリージョナルエリアで88日間従事する必要がある。ファームジョブ（農場仕事）が代表的。"
+  },
+  {
+    "sourceId": "src_homeaffairs_second_whv",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/second-working-holiday-visa",
+    "title": "Second Working Holiday visa (subclass 417) — Home Affairs",
+    "text": "After completing 88 days of specified work in a regional area on your first visa, you can apply for a second Working Holiday visa. A third visa is possible after completing 6 months of specified work. Both second and third visas allow you to stay up to 12 months. セカンドワーホリビザ。1st WHV中に88日の指定労働を完了すると申請可能。さらに6ヶ月の指定労働でサードビザも取得可能。各ビザで最大12ヶ月の滞在が可能。"
+  },
+  {
+    "sourceId": "src_homeaffairs_regional_areas",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/specified-work/regional-postcodes",
+    "title": "Regional postcodes for specified work — Home Affairs",
+    "text": "Specified work must be done in a regional area of Australia. Regional postcodes are defined by the Australian Government and generally exclude major metropolitan areas like Sydney CBD, Melbourne CBD, and Brisbane CBD. Always verify the postcode with the official list before starting work. リージョナルポストコード。指定労働はリージョナルエリアで行う必要がある。シドニー・メルボルン・ブリスベンの都心部は対象外。雇用主の郵便番号を事前に公式リストで確認する。"
   },
   {
     "sourceId": "src_ato_tfn",
     "tier": "official",
     "url": "https://www.ato.gov.au/individuals/tax-file-number/",
     "title": "Tax file number — Australian Taxation Office",
-    "text": "A tax file number (TFN) is free and you can apply online after you arrive in Australia. Give your TFN to your employer to avoid being taxed at the higher no-TFN rate."
+    "text": "A tax file number (TFN) is free and you can apply online after you arrive in Australia. Give your TFN to your employer to avoid being taxed at the higher no-TFN rate (45%). Working holiday makers are taxed at 15% on the first $45,000 of income. TFN（税ファイル番号）の申請方法。オーストラリア到着後にオンラインで無料申請できる。TFNを雇用主に渡さないと最高税率45%で課税される。ワーホリメーカーは最初の$45,000に15%の税率が適用される。"
+  },
+  {
+    "sourceId": "src_ato_whm_tax",
+    "tier": "official",
+    "url": "https://www.ato.gov.au/individuals-and-families/coming-to-australia-or-going-overseas/working-in-australia/working-holiday-makers",
+    "title": "Working holiday makers — Australian Taxation Office",
+    "text": "Working holiday makers (WHMs) are taxed at 15% on the first $45,000 earned. Your employer must be registered with the ATO as a working holiday maker employer to apply the correct tax rate. If your employer is not registered, you may be taxed at a higher rate. 税金・タックス。ワーホリメーカーの所得税率は最初の$45,000まで15%。雇用主がATOにWHM雇用主として登録している必要がある。未登録の場合は高い税率（居住者税率）で源泉徴収される。確定申告で差額を取り戻せる場合もある。"
   },
   {
     "sourceId": "src_fairwork_minimum_wage",
     "tier": "official",
     "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
     "title": "Minimum wages — Fair Work Ombudsman",
-    "text": "Most employees in Australia are covered by a minimum wage and award conditions. Working holiday makers have the same workplace rights; unpaid wages can be reported to the Fair Work Ombudsman."
+    "text": "Most employees in Australia are covered by a minimum wage and award conditions. The national minimum wage is updated each July. Working holiday makers have the same workplace rights as other workers; underpaid wages can be reported to the Fair Work Ombudsman at fairwork.gov.au or by calling 13 13 94. 最低賃金。オーストラリアでは全労働者に最低賃金と労働条件が適用される。ワーホリメーカーも同じ権利を持つ。給与未払い・賃金未払いはFair Work Ombudsmanに報告できる。"
+  },
+  {
+    "sourceId": "src_fairwork_rights",
+    "tier": "official",
+    "url": "https://www.fairwork.gov.au/find-help-for/visa-holders-and-migrants",
+    "title": "Visa holders and migrants — Fair Work Ombudsman",
+    "text": "Your visa status does not affect your rights under Australian workplace law. You are entitled to the minimum wage, penalty rates, and leave entitlements regardless of your visa. Employers cannot use your visa status to underpay you. Free, confidential service in multiple languages including Japanese. ビザホルダーの権利。ビザの種類に関わらず最低賃金・残業代・休暇権が保障される。ビザを理由に低賃金を強要することは違法。多言語（日本語対応あり）で無料・秘密厳守の相談サービスがある。"
+  },
+  {
+    "sourceId": "src_fairwork_underpayment",
+    "tier": "official",
+    "url": "https://www.fairwork.gov.au/pay-and-wages/pay-that-workers-must-receive",
+    "title": "Recovering unpaid wages — Fair Work Ombudsman",
+    "text": "If you have been underpaid, you can submit an online request for assistance to the Fair Work Ombudsman. Keep pay slips, time records, and any messages from your employer. You do not need to speak English to make a complaint — interpreter services are available. There is no fee to lodge a complaint. 給与未払い・賃金未払いの対処法。ペイスリップや労働時間の記録を保管する。Fair Work Ombudsmanにオンラインで無料申請できる。英語が話せなくても通訳サービスがある。雇用主に報復されることへの恐れがあれば相談時に伝える。"
+  },
+  {
+    "sourceId": "src_homeaffairs_visa_condition",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/work-holiday-417/conditions",
+    "title": "Working Holiday visa conditions — Home Affairs",
+    "text": "On a Working Holiday visa (subclass 417) you can work for one employer for up to 6 months, then you must change employer or take a break. You can study for up to 4 months. You must not work in the adult entertainment industry. Breaching conditions may result in visa cancellation. ビザ条件。同一雇用主での就労は最大6ヶ月。その後は別の雇用主に変更するか休憩が必要。留学・勉強は最大4ヶ月可能。アダルト産業での就労禁止。条件違反はビザ取り消しにつながる。"
+  },
+  {
+    "sourceId": "src_bank_account",
+    "tier": "official",
+    "url": "https://moneysmart.gov.au/",
+    "title": "Setting up a bank account in Australia — ASIC MoneySmart",
+    "text": "Most major Australian banks (Commonwealth, ANZ, Westpac, NAB) allow you to open an account before you arrive using your passport. Bring your passport and proof of address when you visit a branch. You will need an Australian bank account to receive wages from your employer. 銀行口座の開設。Commonwealth・ANZ・Westpac・NABなど主要銀行は渡航前にパスポートで口座予約可能。支店来店時にパスポートと住所証明が必要。給与受け取りにはオーストラリアの銀行口座が必須。"
+  },
+  {
+    "sourceId": "src_homeaffairs_arrival",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/entering-and-leaving-australia/entering-australia",
+    "title": "Entering Australia — Home Affairs",
+    "text": "Make sure your passport is valid for the duration of your stay. Declare food, plant material, animal products at customs. Australia has strict biosecurity laws. Use SmartGate at major airports if your passport has an e-Chip. Keep your VEVO record handy as employers may ask for it. オーストラリア入国・到着後の手続き。食品・植物・動物製品は税関申告必須。生物検疫（バイオセキュリティ）法が厳格。eチップ付きパスポートはSmartGateが使用可能。雇用主からVEVO（就労資格確認）を求められることがある。"
+  },
+  {
+    "sourceId": "src_ato_super",
+    "tier": "official",
+    "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/growing-and-keeping-track-of-your-super/your-employer-and-super/super-for-working-holiday-makers",
+    "title": "Superannuation for working holiday makers — ATO",
+    "text": "Your employer must pay superannuation (currently 11.5% of ordinary time earnings) into a super fund on your behalf. When you permanently leave Australia, you can claim your super back as a Departing Australia Superannuation Payment (DASP). A tax of 65% applies to WHM DASP. スーパーアニュエーション（年金積立）。雇用主は通常賃金の11.5%をスーパーファンドに積み立てる義務がある。オーストラリアを出国する際はDASP（出国時スーパー払い戻し）として受け取れる。ただしワーホリメーカーには65%の課税が適用される。"
+  },
+  {
+    "sourceId": "src_workforce_australia_jobs",
+    "tier": "official",
+    "url": "https://www.workforceaustralia.gov.au/",
+    "title": "Workforce Australia — job search",
+    "text": "Workforce Australia is the Australian Government's official job-search service. You can search for farm work, hospitality, and other regional jobs. Employers listing jobs here have agreed to Fair Work employment conditions. Search by postcode and industry to find specified-work opportunities for the second visa. 仕事探し（ジョブサーチ）。オーストラリア政府公式の求人サービス。ファームワーク・ホスピタリティ・地方の仕事を検索可能。郵便番号・業種で絞り込みでき、88日指定労働の仕事も探せる。"
+  },
+  {
+    "sourceId": "src_homeaffairs_vevo",
+    "tier": "official",
+    "url": "https://immi.homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-your-visa-details-and-conditions",
+    "title": "VEVO — Visa Entitlement Verification Online",
+    "text": "Use VEVO to check your own visa details and conditions anytime. Employers can use VEVO to verify your right to work. You can share your VEVO record with employers using a share code. Always check VEVO to confirm your visa is current before starting a new job. VEVO（ビザ資格確認オンライン）。自分のビザの詳細・条件をいつでも確認できる。雇用主に就労資格を証明するためシェアコードで共有可能。新しい仕事を始める前に必ずVEVOでビザが有効であることを確認する。"
+  },
+  {
+    "sourceId": "src_fairwork_payslip",
+    "tier": "official",
+    "url": "https://www.fairwork.gov.au/pay-and-wages/pay-slips-and-record-keeping",
+    "title": "Pay slips and record keeping — Fair Work Ombudsman",
+    "text": "Employers must give you a pay slip within one working day of paying your wages. The pay slip must show your employer's name and ABN, pay period, gross and net pay, tax withheld, and super contributions. Keep all pay slips for your DASP claim or wage complaint. ペイスリップ（給与明細）。雇用主は給与支払い後1営業日以内にペイスリップを渡す義務がある。会社名・ABN・支払い期間・税引き前後の賃金・スーパー積立額が記載されていること。DASP請求や賃金未払い申告のために全て保管する。"
   }
 ]
