@@ -38,3 +38,6 @@ coverage/
 .vscode/*
 !.vscode/extensions.json
 *.log
+
+# Git worktrees
+.worktrees/
