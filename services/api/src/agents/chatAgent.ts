@@ -6,6 +6,7 @@ import {
 } from "@whv-compass/shared";
 import { env, isLlmEnabled } from "../lib/env.js";
 import { getRetriever } from "../rag/retriever.js";
+import { saveTurn } from "../lib/session.js";
 import { buildGraphUpdate } from "./graphUpdateGenerator.js";
 
 /**
@@ -31,14 +32,13 @@ export async function handleChat(req: ChatRequest): Promise<ChatResponse> {
     tierBoost: true,
   });
 
+  void saveTurn(req.sessionId, { role: "user", text: req.message, sources: [] });
+
   if (!isLlmEnabled()) {
     const { graph_update, sources } = buildGraphUpdate(req.message, chunks);
-    return {
-      answer: mockAnswer(req.message, sources),
-      sources,
-      graph_update,
-      mocked: true,
-    };
+    const answer = mockAnswer(req.message, sources);
+    void saveTurn(req.sessionId, { role: "assistant", text: answer, sources });
+    return { answer, sources, graph_update, mocked: true };
   }
 
   // --- LLM path (Gemini via the AI SDK; Mastra agent migration: see roadmap) ---
@@ -72,6 +72,7 @@ export async function handleChat(req: ChatRequest): Promise<ChatResponse> {
     ? parsed.data
     : buildGraphUpdate(req.message, chunks).graph_update;
 
+  void saveTurn(req.sessionId, { role: "assistant", text: object.answer, sources });
   return { answer: object.answer, sources, graph_update, mocked: false };
 }
 
