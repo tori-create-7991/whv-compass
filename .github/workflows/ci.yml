@@ -19,9 +19,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # pnpm/action-setup は version 指定を省略すると package.json の
+      # "packageManager" フィールド（pnpm@9.12.0）を自動採用する。両方指定
+      # すると "Multiple versions of pnpm specified" で fail する
+      # （main が 6/24 から継続して落ちていたバグ）。
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - uses: actions/setup-node@v4
         with:
