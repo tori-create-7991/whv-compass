@@ -1,0 +1,43 @@
+name: Night Loop - Claude Lane
+
+# design.md 設計制約2: claude.yml は必須(未設置だとレーンが沈黙する)。
+# workflow の既定 GITHUB_TOKEN で PR を作ると `pull_request` イベントが
+# 発火しない(GitHub の自トークン抑止ルール)ため、PR 作成は必ず
+# NIGHT_PAT (fine-grained PAT, issues:write + pull_requests:write) で行う。
+#
+# NOTE(要 S-3 スモークで確認): claude-code-action の PR 作成トークンを
+# 上書きするパラメータ名は provider 側の仕様変更リスクがあるため
+# Phase 0.5 の S-3 で実 PR が開くこと・CI が発火することを必ず確認すること。
+#
+# セキュリティ(pr-code-review 2026-07-12 指摘・修正): issue_comment は Issue
+# だけでなく PR 会話コメントにも発火し、public repo では第三者が任意の本文で
+# コメントできる。author_association を OWNER/MEMBER/COLLABORATOR に絞らないと
+# 誰でも write 権限付きジョブ（contents/pull-requests/issues: write + NIGHT_PAT）
+# を "@claude <悪意ある指示>" コメントだけで起動できてしまう(pwn request)。
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  claude:
+    if: >
+      contains(github.event.comment.body, '@claude') &&
+      contains(fromJson('["OWNER", "MEMBER", "COLLABORATOR"]'), github.event.comment.author_association)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      # TODO(サプライチェーン対策, pr-code-review 指摘): @v1 のメジャータグ
+      # 固定は tag re-point リスクがある。Phase 0.5 で
+      # `gh api repos/anthropics/claude-code-action/git/refs/tags/v1` 等で
+      # 実際の commit SHA を確認し、コミット SHA 固定 + Renovate/Dependabot
+      # 定期更新に切り替える(架空の SHA を書かないこと — 要ライブ確認)。
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.NIGHT_PAT }}
