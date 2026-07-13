@@ -69,6 +69,11 @@ whv-compass/
 └── firestore.indexes.json
 ```
 
+## 前提条件（Prerequisites）
+
+- **Node.js**: `>=20`
+- **pnpm**: `9.12.0`
+
 ## Quick start
 
 > Prereqs: **Node 20+**, **pnpm 9+**. A Gemini API key (free tier) for live
