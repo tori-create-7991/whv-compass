@@ -69,9 +69,14 @@ whv-compass/
 └── firestore.indexes.json
 ```
 
+## Prerequisites
+
+- Node.js: `>=20` (see `engines` in package.json)
+- pnpm: `9.12.0` (see `packageManager` in package.json)
+
 ## Quick start
 
-> Prereqs: **Node 20+**, **pnpm 9+**. A Gemini API key (free tier) for live
+> A Gemini API key (free tier) for live
 > answers; everything else runs against the Firebase emulator locally.
 
 ```bash
